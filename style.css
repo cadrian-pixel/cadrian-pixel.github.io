@@ -1,0 +1,30 @@
+body {
+  background-color: skyblue;
+  color: verydarkgreen;
+}
+h1 {
+  color: emerald;
+}
+div {
+  color: navy;
+}
+a:link {
+  color: ruby;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: maroon;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: lime;
+  background-color: transparent;
+  text-decoration: underline;
+}
