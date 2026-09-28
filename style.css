@@ -10,6 +10,7 @@ h1, h2 {
 div, p {
   color: navy;
   font-family: Perpetua;
+  font-size: 20px;
 }
 a:link {
   color: ruby;
