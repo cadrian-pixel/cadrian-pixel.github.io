@@ -5,13 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>FM SynthWiki</title>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body>
-    <h1><a href="?">Wiki</a></h1>
-    <h2>Search</h2>
-    <input type="text" id="searchTextBox" style="width:400px" onkeyup="searchInWiki('searchTextBox', 'wikiDiv')">
-
-    <h2>Wiki</h2>
+    <h1>FM SynthWiki</h1>
+    <p>Welcome to FM SynthWiki, the most reliable resource for FM technology.</p>
+    <h2>List of Current Pages</h2>
+        <ul>
+            <li><a href="ym2151.html">YM2151</a></li>
+            <li><a href="ym2612.html">YM2612</a></li>
+            <li><a href="ym2203.html">YM2203</a></li>
+            <li><a href="ymz280b.html">YMZ280B</a></li>
+        </ul>
     <div id="wikiDiv">
     </div>
 </body>
