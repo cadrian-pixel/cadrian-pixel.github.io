@@ -1,12 +1,15 @@
 body {
   background-color: skyblue;
   color: verydarkgreen;
+  font-family: Lucida;
 }
-h1 {
+h1, h2 {
   color: emerald;
+  font-family: Century;
 }
-div {
+div, p {
   color: navy;
+  font-family: Perpetua;
 }
 a:link {
   color: ruby;
