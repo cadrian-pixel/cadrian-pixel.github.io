@@ -5,28 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>FM SynthWiki</title>
-<style>
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
 </head>
 <body>
     <h1>FM SynthWiki</h1>
@@ -39,6 +17,10 @@ a:active {
             <li><a href="ymz280b.html">YMZ280B</a></li>
         </ul>
     <div id="wikiDiv">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
