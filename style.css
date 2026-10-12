@@ -12,6 +12,11 @@ div, p {
   font-family: Perpetua;
   font-size: 20px;
 }
+a {
+  color: ruby;
+  background-color: transparent;
+  text-decoration: none;
+}
 a:link {
   color: ruby;
   background-color: transparent;
@@ -32,3 +37,6 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+#adjustable-text {
+  font-size: 20px;
+  transition: font-size 0.2s ease;
