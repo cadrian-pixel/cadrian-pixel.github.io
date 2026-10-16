@@ -17,6 +17,10 @@
             <li><a href="ymz280b.html">YMZ280B</a></li>
         </ul>
     <form id="chip-search">
+        <label for="search">Search for articles here:</label>
+        <input id="search" name="search" type="text" placeholder="Search">
+        <button type="submit">Search</button>
+        <p id="search-message"></p>
         <script>
             const pages = { ym2151: "ym2151.html", ym2612: "ym2612.html", ym2203: "ym2203.html", ymz280b: "ymz280b.html" };
             const form = document.getElementById("chip-search");
@@ -39,10 +43,6 @@
                 window.location.href = pages[match];
             });
         </script>
-        <label for="search">Search for articles here:</label>
-        <input id="search" type="text" placeholder="Search" name="search">
-        <button type="submit">Search</button>
-        <p id="search-message"></p>
     </form>
 </body>
 </html>
