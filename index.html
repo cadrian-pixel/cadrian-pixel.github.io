@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script>
         const pages = { ym2151: "ym2151.html", ym2612: "ym2612.html", ym2203: "ym2203.html", ymz280b: "ymz280b.html" };
         const form = document.getElementById("chip-search");
@@ -26,6 +25,7 @@
             window.location.href = pages[match];
         });
     </script>
+    <link rel="stylesheet" href="style.css">
     <title>FM SynthWiki</title>
 </head>
 <body>
@@ -38,13 +38,11 @@
             <li><a href="ym2203.html">YM2203</a></li>
             <li><a href="ymz280b.html">YMZ280B</a></li>
         </ul>
-    <div id="wikiDiv">
-        <form id="chip-search">
-            <label for="search">Search for articles here:</label>
-            <input type="text" placeholder="Search" name="search" id="search">
-            <button type="submit">Search</button>
-            <p id="search-message"></p>
-        </form>
-    </div>
+    <form id="chip-search">
+        <label for="search">Search for articles here:</label>
+        <input id="search" type="text" placeholder="Search" name="search">
+        <button type="submit">Search</button>
+        <p id="search-message"></p>
+    </form>
 </body>
 </html>
