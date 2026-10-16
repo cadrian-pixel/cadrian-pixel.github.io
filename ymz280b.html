@@ -18,9 +18,22 @@
     <title>YMZ280B - FM SynthWiki</title>
 </head>
 <body>
-    <a href="index.html">
-    <h1><em>Back to FM SynthWiki</em></h1>
-    </a>
+    <svg width="700" height="200">
+        <defs>
+            <linearGradient id="GRADA">
+                <stop offset="0%" stop-color="rgb(0, 60, 0)"></stop>
+                <stop offset="100%" stop-color="rgb(0, 120, 0)"></stop>
+            </linearGradient>
+            <filter id="SHD1">
+                <feDropShadow dx="0" dy="10" flood-opacity="0.8" />
+            </filter>
+        </defs>
+        <rect rx="40" ry="20" width="600" height="200" style="fill:url(#GRADA);stroke:rgb(0, 40, 0);stroke-width:5;opacity:0.8" />
+        <a href="index.html">
+            <text fill="none" stroke="rgb(100, 200, 100)" font-size="60px" font-family="Cambria" filter="url(#SHD1)" x="120" y="100">FM SynthWiki</text>
+        </a>
+        Sorry, your browser does not support inline SVG.
+    </svg>
     <hr>
 
     <h1>YMZ280B</h1>
