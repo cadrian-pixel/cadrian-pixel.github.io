@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+        const pages = { ym2151: "ym2151.html", ym2612: "ym2612.html", ym2203: "ym2203.html", ymz280b: "ymz280b.html" };
+        const form = document.getElementById("chip-search");
+        const box = document.getElementById("search");
+        const message = document.getElementById("search-message");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const query = box.value.trim().toLowerCase().replace(/\s+/g, "");
+            if (!query) {
+                message.textContent = "Enter a chip name (e.g. YM2612)";
+                return;
+            }
+            const match = Object.keys(pages).find(function (key) {
+                return key.includes(query);
+            });
+            if (!match) {
+                message.textContent = "Sorry, but that article is not present. Try a different search.";
+                return;
+            }
+            window.location.href = pages[match];
+        });
+    </script>
     <title>FM SynthWiki</title>
 </head>
 <body>
@@ -17,9 +39,11 @@
             <li><a href="ymz280b.html">YMZ280B</a></li>
         </ul>
     <div id="wikiDiv">
-        <form action="#" method="get">
-            <input type="text" placeholder="Search" name="search">
-            <button type="submit">Submit</button>
+        <form id="chip-search">
+            <label for="search">Search for articles here:</label>
+            <input type="text" placeholder="Search" name="search" id="search">
+            <button type="submit">Search</button>
+            <p id="search-message"></p>
         </form>
     </div>
 </body>
